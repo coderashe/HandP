@@ -12,7 +12,7 @@ export const STORE_INFO: StoreInfo = {
   googleMapsUrl: 'https://maps.google.com/?q=Leopold+Takawira+St+Harare+Zimbabwe',
   email: 'hpshoes.harare@gmail.com',
   hours: 'Mon–Sat 8:00AM–6:00PM | Sun 10:00AM–3:00PM',
-  copyrightYear: 2025,
+  copyrightYear: 2026,
   featuredBrands: ['Nike', 'Adidas', 'Clarks', 'Timberland', 'Polo', 'Guess', 'Zara', 'H&M'],
   trustPillars: [
     {

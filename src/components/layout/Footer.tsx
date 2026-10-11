@@ -173,7 +173,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom copyright & attribution bar */}
         <div className="mt-14 pt-8 border-t border-emerald-900/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-emerald-300/70">
-          <p>© {STORE_INFO.copyrightYear} H & P Shoes. All rights reserved. Harare, Zimbabwe.</p>
+          <p>© {STORE_INFO.copyrightYear} powered by IStartK. All rights reserved.</p>
           <p className="text-emerald-300/50">
             Royal Elegance · Style That Speaks | Quality You Feel
           </p>
