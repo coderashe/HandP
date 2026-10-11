@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@theme {
+  --color-matte-gold: #c59b27;
+  --color-matte-gold-hover: #b38a1c;
+  --color-emerald-deep: #064e3b;
+  --color-emerald-royal: #065f46;
+  --color-emerald-light: #ecfdf5;
+  --color-ivory: #fafaf9;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fafaf9;
+  color: #1c1917;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c59b27;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b38a1c;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+  white-space: nowrap;
+  display: inline-flex;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.gold-glow {
+  box-shadow: 0 0 20px rgba(197, 155, 39, 0.2);
+}
+
+.gold-glow-lg {
+  box-shadow: 0 0 30px rgba(197, 155, 39, 0.25), 0 0 60px rgba(197, 155, 39, 0.1);
+}
+
+.luxury-card {
+  background-color: #ffffff;
+  border: 1px solid #e7e5e4;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px -2px rgba(6, 78, 59, 0.04);
+}
+
+.luxury-input {
+  background-color: #ffffff;
+  border: 1px solid #d6d3d1;
+  color: #1c1917;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.luxury-input:focus {
+  border-color: #065f46;
+  box-shadow: 0 0 0 1px #065f46;
+}
+
+.luxury-input::placeholder {
+  color: #a8a29e;
+}

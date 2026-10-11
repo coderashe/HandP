@@ -1,0 +1,6 @@
+{
+  "name": "H & P Shoes — Harare's Premium Fashion Destination",
+  "description": "Premium footwear and designer clothing in Harare, Zimbabwe. Shop online or visit us on Leopold Takawira St.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
