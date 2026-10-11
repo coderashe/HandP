@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 
 export default defineConfig(() => ({
-  base: '/HAndPShoes/',
+  base: '/HandP/',
   plugins: [
     react(),
     tailwindcss(),
@@ -12,7 +12,7 @@ export default defineConfig(() => ({
       configureServer(server) {
         server.middlewares.use((req, res, next) => {
           if (req.url === '/' || req.url === '/index.html') {
-            res.writeHead(302, { Location: '/HAndPShoes/' });
+            res.writeHead(302, { Location: '/HandP/' });
             res.end();
             return;
           }

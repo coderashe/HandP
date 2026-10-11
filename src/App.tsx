@@ -31,7 +31,7 @@ const AnimatedRoutes: React.FC = () => {
 };
 
 export default function App() {
-  const basename = window.location.pathname.startsWith('/HAndPShoes') ? '/HAndPShoes' : '/';
+  const basename = window.location.pathname.startsWith('/HandP') ? '/HandP' : '/';
 
   return (
     <BrowserRouter basename={basename}>
